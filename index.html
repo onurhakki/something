@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="Films and documentary work by director and editor Selin Aktaş Eyüboğlu." name="description" />
+    <meta content="#e5e5e5" name="theme-color" />
+
+    <title>Selin Aktaş Eyüboğlu</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="assets/css/site.css?v=about1" rel="stylesheet" />
+    <link href="assets/css/about-popup.css?v=1" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="assets/film.png"/>
+
+</head>
+
+<body>
+    <header class="site-header" id="site-header">
+        <div class="wrap header-inner"><a class="wordmark" href="#home"><span aria-hidden="true"
+                    class="wordmark-dot"></span>Selin Aktaş Eyüboğlu</a>
+            <button aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation" class="menu-button"
+                type="button">Menu <span aria-hidden="true">☰</span></button>
+            <nav aria-label="Primary navigation" id="site-nav">
+                <!-- <a href="#about">About</a> -->
+                <a href="#movies">Movies</a>
+                <a href="#commissioned-works">Works</a>
+                <a href="#festival-gallery">Gallery</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a></nav>
+        </div>
+    </header>
+    <main id="main-content">
+        <section class="wrap home-hero-text single-page-section" data-reveal="" id="home">
+            <p class="eyebrow">Film Director &amp; Editor <span class="eyebrow-sep">/</span> Istanbul, Türkiye</p>
+            <h1>Selin Aktaş<br />Eyüboğlu<span class="name-period">.</span></h1>
+            <a class="text-link" href="#about">About the Biography <span aria-hidden="true">↗</span></a>
+        </section>
+        <section class="wrap block home-movies single-page-section" data-reveal="" id="movies">
+            <div class="section-title">
+                <h2>Movies<span class="section-dot">.</span></h2><span class="section-mini">01</span>
+            </div>
+            <div class="film-grid" id="films-grid"></div>
+        </section>
+        <section class="wrap block" data-reveal="" id="commissioned-works">
+            <div class="section-title">
+                <h2>Commissioned Works<span class="section-dot">.</span></h2><span class="section-mini">02</span>
+            </div>
+            <div class="film-grid" id="commissions-grid"></div>
+        </section>
+        <section class="wrap block festival-works-section" data-reveal="" id="festival-gallery">
+            <div class="section-title">
+                <h2>Festival Gallery<span class="section-dot">.</span></h2><span class="section-mini">03</span>
+                <div class="carousel-actions"><span aria-live="polite" class="festival-counter"
+                        data-carousel-counter=""></span><button aria-label="Previous photo" class="carousel-arrow"
+                        data-carousel-prev="" type="button">←</button><button aria-label="Next photo"
+                        class="carousel-arrow" data-carousel-next="" type="button">→</button></div>
+            </div>
+            <div aria-label="Festival gallery" aria-roledescription="carousel"
+                class="festival-carousel festival-gallery-v7" data-festival-carousel="" role="region" tabindex="0">
+            </div>
+            <p class="muted" hidden="" id="festival-empty">Festival photographs can be added in assets/js/content.js.
+            </p>
+        </section>
+        <section class="wrap block single-page-section" data-reveal="" id="news">
+            <div class="section-title">
+                <h2>News<span class="section-dot">.</span></h2><span class="section-mini">04</span>
+            </div>
+            <div class="news-text-list" id="news-list"></div>
+            <div class="news-pager" hidden="" id="news-pager"><button id="news-prev" type="button">←
+                    Previous</button><span id="news-count"></span><button id="news-next" type="button">Next →</button>
+            </div>
+        </section>
+
+        <section class="wrap block single-page-section" id="contact">
+            <div class="section-title">
+                <h2>Contact<span class="section-dot">.</span></h2><span class="section-mini">05</span>
+            </div>
+            <div class="reading contact-content">
+                <p>For film screenings, collaborations, and new project inquiries, please get in touch.</p>
+                <p><a class="email-link" href="mailto:selin.aktas@yahoo.com">selin.aktas@yahoo.com</a></p>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer wrap"><span>© <span id="year"></span> Selin Aktaş Eyüboğlu</span><span>Film Director & Editor
+            · Istanbul, Türkiye</span></footer>
+    <div aria-label="Film details" aria-modal="true" class="film-detail-panel" hidden="" id="film-detail" role="dialog">
+        <div class="wrap detail-head"><button class="detail-close" id="film-close" type="button">Close ×</button></div>
+        <article class="wrap film-page" id="film-detail-content"></article>
+    </div>
+    <div aria-hidden="true" aria-label="Image viewer" aria-modal="true" class="lightbox" hidden="" id="site-lightbox"
+        role="dialog">
+        <div class="lightbox-backdrop" data-lightbox-close=""></div>
+        <div class="lightbox-content"><button aria-label="Close image viewer" class="lightbox-close"
+                data-lightbox-close="" type="button">×</button><img alt="" id="lightbox-image" />
+            <div class="lightbox-toolbar"><button aria-label="Previous image" id="lightbox-prev"
+                    type="button">←</button>
+                <p aria-live="polite" id="lightbox-caption"></p><button aria-label="Next image" id="lightbox-next"
+                    type="button">→</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/content.js"></script>
+    <script defer="" src="assets/js/site.js?v=about1"></script>
+    <div aria-labelledby="about-modal-title" aria-modal="true" class="about-modal" hidden="" id="about-modal"
+        role="dialog">
+        <div class="about-modal-backdrop" data-about-close=""></div>
+        <div class="about-modal-panel" role="document" tabindex="-1">
+            <div class="about-modal-header"><span id="about-modal-title">About the Biography</span><button
+                    aria-label="Close About" class="about-modal-close" id="about-modal-close" type="button">Close
+                    ×</button></div>
+            <section class="wrap block about-popup-inner">
+                <div class="section-title">
+                    <h2>About<span class="section-dot">.</span></h2>
+                </div>
+                <div class="about-layout">
+                    <div class="reading">
+                        <div id="about-bio"></div>
+                        <h2>Statement</h2>
+                        <div id="about-statement"></div>
+                    </div>
+                    <aside class="about-portrait" id="about-portrait">
+                        <div class="profile-placeholder">Portrait image can be added in content.js</div>
+                    </aside>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script defer="True" src="assets/js/about-popup.js?v=1"></script>
+</body>
+
+</html>
