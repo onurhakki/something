@@ -390,6 +390,6 @@ window.PORTFOLIO_CONTENT = {
   },
 
   ],
-  "profileImage": "profile/selin-aktas-profile.png",
+  "profileImage": "profile/selin-profile.png",
   "profileAlt": "Portrait of Selin Aktaş Eyüboğlu"
 };
